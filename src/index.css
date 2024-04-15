@@ -20,13 +20,14 @@
   width: 84px;
   height: 84px;
   border-radius: 50%;
-  background: #8a8a8ad9;
+  background: #e9e9e97b;
   transform: translate(-50%, -50%) scale(1);
   animation: push 2s infinite ease-in;
   -webkit-transform: translate(-50%, -50%) scale(1);
   -moz-transform: translate(-50%, -50%) scale(1);
   -ms-transform: translate(-50%, -50%) scale(1);
   -o-transform: translate(-50%, -50%) scale(1);
+  -webkit-animation: push 2s infinite ease-in;
 }
 
 .loader:after {
@@ -250,15 +251,13 @@ ul li a:hover, ul li button:hover {
   
 }
 
-
-
 #background-image {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image: url('../src/assets/Back.png'); /* Ajusta el path a tu imagen */
+  background-image: url('https://images.unsplash.com/photo-1614670453169-89b992542686?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'); /* Ajusta el path a tu imagen */
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -270,10 +269,45 @@ ul li a:hover, ul li button:hover {
 }
 
 .icono{
-  color: #133a62;
+  color: #ffffff;
+  box-shadow: 0px 0px 0.1px rgb(255, 255, 255);
+
 }
 
 .card-login{
   background-color: rgba(255, 255, 255, 0.863);
   height: 95%;
+  height: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color:white;
+  background: rgba(255, 255, 255, .25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+
+}
+.card-header{
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.669);
+}
+
+.card-text{
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.label-formulario{
+  font-weight: 700;
+  font-size: 1.1rem;
+  
 }

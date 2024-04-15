@@ -63,7 +63,7 @@ const Login = () => {
           <p className='card-text'>Por favor escribe tus credenciales</p>
           <form onSubmit={onSubmit}>
             <div className="form-group">
-              <label htmlFor='email'>Email</label>
+              <label htmlFor='email' className='label-formulario'>Email</label>
               <input 
                 type="email"
                 className='form-control'
@@ -75,7 +75,7 @@ const Login = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor='password'>Password</label>
+              <label htmlFor='password' className='label-formulario'>Password</label>
               <input 
                 type="password"
                 className='form-control'
