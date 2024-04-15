@@ -19,8 +19,8 @@ const Dashboard = () => {
 
   return (
     <div className='dashboard'>
-      <h1>Bienvenido al Dashboard</h1>
-      <p>Contenido del dashboard aquí...</p>
+      <h1></h1>
+      <p></p>
     </div>
   );
 };

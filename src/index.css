@@ -284,7 +284,7 @@ ul li a:hover, ul li button:hover {
   color:white;
   background: rgba(255, 255, 255, .25);
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(1px);
   border: 1.5px solid rgba(209, 213, 219, 0.3);
 
 }
@@ -310,4 +310,37 @@ ul li a:hover, ul li button:hover {
   font-weight: 700;
   font-size: 1.1rem;
   
+}
+
+/*Registro fondo de pantalla*/
+
+#background-image-registro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1504567961542-e24d9439a724?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Ajusta el path a tu imagen */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+
+.card-registro{
+  background-color: rgba(255, 255, 255, 0.863);
+  height: 95%;
+  height: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color:white;
+  background: rgba(255, 255, 255, 0.247);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(209, 213, 219, 0.338);
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }

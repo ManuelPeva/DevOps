@@ -67,64 +67,75 @@ const Register = () => {
 
   return (
     <>
-    <section className='heading'>
-      <h4><FaUser /> Registrar Usuario</h4>
-      <p>Por favor crea un usuario</p>
-    </section>
+    <div id="background-image-registro"></div>
+    <section className='container mt-6'>
+  <div className='row justify-content-center'>
+    <div className='col-md-6'>
+      <div className='card card-registro'>
+        <h4 className='card-header'>
+          <FaUser className='icono' /> Registrar Usuario
+        </h4>
+        <div className='card-body'>
+          <p className='card-text'>Por favor crea un usuario</p>
+          <form onSubmit={onSubmit}>
+            <div className="form-group">
+              <label htmlFor='name' className='label-formulario'>Nombre</label>
+              <input 
+                type="text"
+                className='form-control'
+                id='name'
+                name='name'
+                value={name}
+                placeholder='Por favor escribe tu nombre'
+                onChange={onChange}
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor='email' className='label-formulario'>Email</label>
+              <input 
+                type="email"
+                className='form-control'
+                id='email'
+                name='email'
+                value={email}
+                placeholder='Por favor escribe tu email'
+                onChange={onChange}
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor='password' className='label-formulario'>Password</label>
+              <input 
+                type="password"
+                className='form-control'
+                id='password'
+                name='password'
+                value={password}
+                placeholder='Por favor escribe tu password'
+                onChange={onChange}
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor='password2' className='label-formulario'>Confirmar Password</label>
+              <input 
+                type="password"
+                className='form-control'
+                id='password2'
+                name='password2'
+                value={password2}
+                placeholder='Por favor confirma tu password'
+                onChange={onChange}
+              />
+            </div>
+            <button type='submit' className='btn btn-primary btn-block'>
+              Crear cuenta
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section className='form' >
-      <form onSubmit={onSubmit}>
-        <div className="form-group">
-          <input 
-          type="text"
-          className='form-control'
-          id='name'
-          name='name'
-          value={name}
-          placeholder='por favor escriba su nombre'
-          onChange={onChange}
-          />
-        </div>
-        <div className="form-group">
-          <input 
-          type="email"
-          className='form-control'
-          id='email'
-          name='email'
-          value={email}
-          placeholder='por favor escriba su email'
-          onChange={onChange}
-          />
-        </div>
-        <div className="form-group">
-          <input 
-          type="password"
-          className='form-control'
-          id='pasword'
-          name='password'
-          value={password}
-          placeholder='por favor escriba tu password'
-          onChange={onChange}
-          />
-        </div>
-        <div className="form-group">
-          <input 
-          type="password"
-          className='form-control'
-          id='pasword2'
-          name='password2'
-          value={password2}
-          placeholder='por favor confirma tu password'
-          onChange={onChange}
-          />
-        </div>
-        <div className="form-group">
-          <button type='submit' className='btn btn-block'>
-            Crear cuenta
-          </button>
-        </div>
-      </form>
-    </section>
     </>
   )
 }
