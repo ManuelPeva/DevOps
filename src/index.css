@@ -379,7 +379,10 @@ ul li a:hover, ul li button:hover {
 }
 
 .product-card {
-  width: 200px; /* Ancho de cada tarjeta */
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  width: 250px; /* Ancho de cada tarjeta */
   border: 1px solid #ccc; /* Bordes suaves para la tarjeta */
   border-radius: 8px; /* Bordes redondeados */
   overflow: hidden; /* Asegura que todo el contenido se quede dentro de los bordes redondeados */
@@ -410,4 +413,107 @@ ul li a:hover, ul li button:hover {
   font-size: 16px; /* Tamaño de fuente para el precio */
   color: green; /* Color para el precio, típicamente verde o algo que destaque */
   text-align: center; /* Centro el texto del precio */
+}
+
+.title-products{
+  text-align: center;
+		text-transform: uppercase;
+		font-size: 65px;
+		font-weight: 400;
+		letter-spacing: 3px;
+		line-height: .8;
+		padding-top: 50px;
+		font-family: 'Montserrat', sans-serif;
+}
+
+span{
+			text-transform: uppercase;
+			letter-spacing: 7px;
+			font-size: 25px;
+			line-height: 1;
+    }
+
+    /* Media queries para pantallas menores */
+@media (max-width: 768px) {
+  .title-products {
+    font-size: 40px;  /* Tamaño de fuente más pequeño para pantallas estrechas */
+    padding-top: 20px;  /* Menos espacio superior para evitar consumir demasiada pantalla */
+  }
+  .title-products span {
+    font-size: 18px;  /* Tamaño más pequeño para el texto del span */
+    letter-spacing: 3px;  /* Espaciado de letras más ajustado */
+  }
+}
+
+@media (max-width: 480px) {
+  .title-products {
+    font-size: 30px;  /* Aún más pequeño para pantallas de móviles muy pequeñas */
+    padding-top: 10px;  /* Reducir aún más el espacio superior */
+  }
+  .title-products span {
+    font-size: 16px;  /* Más reducción en el tamaño de la fuente para el span */
+    letter-spacing: 2px;  /* Espaciado de letras más ajustado */
+  }
+
+  .underline{
+    height: 2px;
+    width: 80%;
+    background-color: #133a62;
+    margin-bottom: 25px;
+  }
+}
+
+/*boton comprar*/
+
+.buy-button {
+  
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+/*Marcas*/
+.marca-container {
+  overflow: hidden;
+  width: 100%;
+  background: white; /* Ajusta el fondo según tu diseño */
+}
+
+.marca-slider {
+  display: flex;
+  justify-content: end;
+  animation: slide 10s linear infinite;
+  -webkit-animation: slide 10s linear infinite;
+}
+
+.marca-logo {
+  flex-shrink: 0;
+  width: 220px; /* Ajusta el tamaño según necesites */
+  padding: 20px;
+}
+
+@keyframes slide {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-10%);
+      -webkit-transform: translateX(-10%);
+      -moz-transform: translateX(-10%);
+      -ms-transform: translateX(-10%);
+      -o-transform: translateX(-10%);
+}
+}
+
+img {
+  width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto; /* Mantiene la proporción de aspecto de la imagen */
 }
